@@ -223,7 +223,3 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # django-tailwind-cli settings
 # https://django-tailwind-cli.andrich.me/settings/
 TAILWIND_CLI_PATH = env.str("TAILWIND_CLI_PATH", default="~/.local/bin")
-
-# django-rich
-# https://github.com/adamchainz/django-rich
-TEST_RUNNER = "django_rich.test.RichRunner"
