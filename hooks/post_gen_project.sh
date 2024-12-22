@@ -31,12 +31,12 @@ uv tool run pre-commit install
 echo "\033[32m✓\033[0m Initialized git repository."
 git init -q
 
-echo "\033[32m✓\033[0m Installed pre-commit hook."
-uv tool run pre-commit install
-
 echo "\033[32m✓\033[0m Initial commit."
 git add -A . 2>&1 >/dev/null
 git commit -q -m "Initial commit"
+
+echo "\033[32m✓\033[0m Installed pre-commit hook."
+uv tool run pre-commit install
 
 echo
 echo "\033[32mHappy coding!\033[0m"
