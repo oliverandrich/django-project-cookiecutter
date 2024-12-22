@@ -1,0 +1,14 @@
+{
+    "project_name": "My Awesome New Project",
+    "package_name": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
+    "project_folder": "{{ cookiecutter.project_name.lower()|replace(' ', '-')|replace('_', '-')|replace('.', '-')|trim() }}",
+    "author_name": "Oliver Andrich",
+    "license": [
+        "EUPL-1.2",
+        "Not open source"
+    ],
+    "_copy_without_render": [
+        "justfile",
+        "*.html"
+    ]
+}

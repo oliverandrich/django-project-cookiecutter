@@ -1,0 +1,6 @@
+.*
+docker/docker-compose.yml
+docker/Dockerfile
+.venv
+justfile
+tests
