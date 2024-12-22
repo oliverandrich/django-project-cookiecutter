@@ -25,9 +25,6 @@ echo "\033[32m✓\033[0m Cleaned up new project."
 rm assets/css/.gitkeep
 rm assets/js/.gitkeep
 
-echo "\033[32m✓\033[0m Installed pre-commit hook."
-uv tool run pre-commit install
-
 echo "\033[32m✓\033[0m Initialized git repository."
 git init -q
 
