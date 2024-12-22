@@ -40,7 +40,7 @@ Out of the box SQLite is configured, but you can easily activate MySQL or Postgr
 ## Install
 
 ```shell
-$ uv tool run cookiecutter gh:oliverandrich/dango-cookiecutter
+$ uv tool run cookiecutter gh:oliverandrich/django-project-cookiecutter
 
 # Migrate database
 $ just migrate
