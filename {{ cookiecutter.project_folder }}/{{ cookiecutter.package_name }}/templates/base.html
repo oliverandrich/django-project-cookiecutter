@@ -1,4 +1,4 @@
-{% load django_browser_reload django_htmx static tailwind_cli %}
+{% load django_browser_reload django_htmx tailwind_cli %}
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
     <head>
@@ -21,5 +21,6 @@
                 </div>
             </div>
         {% endblock content %}
+        {% block extra_js %}{% endblock %}
     </body>
 </html>
