@@ -19,7 +19,7 @@ uv run python manage.py tailwind build 2>&1 >/dev/null
 {% if cookiecutter.use_pycharm %}
 echo "\033[32m✓\033[0m Configured PyCharm integration for Tailwind CSS and htmx."
 uv run python manage.py tailwind install_pycharm_workaround 2>&1 >/dev/null
-curl -L -O https://raw.githubusercontent.com/bigskysoftware/htmx/refs/heads/master/editors/jetbrains/htmx.web-types.json
+curl -s -L -O https://raw.githubusercontent.com/bigskysoftware/htmx/refs/heads/master/editors/jetbrains/htmx.web-types.json
 echo '{ "devDependencies": {"tailwindcss": "latest"}, "web-types": "./htmx.web-types.json" }' >package.json
 {% endif %}
 
