@@ -40,7 +40,7 @@ Out of the box SQLite is configured, but you can easily activate MySQL or Postgr
 ## Install
 
 ```shell
-$ uv tool run cookiecutter gh:oliverandrich/django-project-cookiecutter
+$ uv tool run cookiecutter https://codeberg.org/oliverandrich/django-project-cookiecutter.git
 
 # Migrate database
 $ just migrate
@@ -52,9 +52,6 @@ $ just runserver
 ## Usage
 
 ```shell
-# Bootstrap the project and install dependencies
-just bootstrap
-
 # Upgrade/install all dependencies defined in pyproject.toml
 just upgrade
 
