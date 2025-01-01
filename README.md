@@ -40,7 +40,10 @@ Out of the box SQLite is configured, but you can easily activate MySQL or Postgr
 ## Install
 
 ```shell
+# Pull the template from Codeberg...
 $ uv tool run cookiecutter https://codeberg.org/oliverandrich/django-project-cookiecutter.git
+# or use the GitHub mirror...
+$ uv tool run cookiecutter https://github.com/oliverandrich/django-project-cookiecutter.git
 
 # Migrate database
 $ just migrate
