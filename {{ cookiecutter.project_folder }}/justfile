@@ -43,8 +43,10 @@ alias runserver := debugserver
 
 # run test suite
 @test *ARGS: check_uv
-    uv run -m pytest {{ ARGS }}
+    uv run manage.py test {{ ARGS }}
 
 # run test suite with coverage
 @coverage *ARGS: check_uv
-    uv run -m pytest --cov --cov-report term-missing
+    uv run coverage run manage.py test {{ ARGS }}
+    uv run coverage report -m
+    uv run coverage html
