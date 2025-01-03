@@ -1,4 +1,4 @@
-# django-startproject
+# django-project-cookiecutter
 
 ![Screenshot of the landing page](docs/landingpage.png)
 
