@@ -39,14 +39,12 @@ alias runserver := debugserver
 
 # run pre-commit rules on all files
 @lint: check_uv
-    uv run -m pre_commit run --all-files
+    uvx --with pre-commit-uv pre-commit run --all-files
 
 # run test suite
 @test *ARGS: check_uv
-    uv run manage.py test {{ ARGS }}
+    uv run pytest {{ ARGS }}
 
 # run test suite with coverage
 @coverage *ARGS: check_uv
-    uv run coverage run manage.py test {{ ARGS }}
-    uv run coverage report -m
-    uv run coverage html
+    uv run pytest --cov --cov-report=html --cov-report=term {{ ARGS }}
