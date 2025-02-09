@@ -25,7 +25,7 @@ set dotenv-load
 
 # start debugserver
 @debugserver *ARGS: check_uv
-    uv run manage.py tailwind runserver_plus {{ ARGS }}
+    uv run manage.py tailwind runserver {{ ARGS }}
 
 alias runserver := debugserver
 
