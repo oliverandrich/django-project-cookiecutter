@@ -13,7 +13,7 @@ echo "DEBUG=true" >>.env
 echo "\033[32m✓\033[0m Installed dependencies."
 uv sync --quiet --all-extras
 
-echo "\033[32m✓\033[0m Created default tailwind.config.js."
+echo "\033[32m✓\033[0m Created default assets/css/source.css"
 uv run python manage.py tailwind build 2>&1 >/dev/null
 
 {% if cookiecutter.license == "EUPL-1.2" %}
