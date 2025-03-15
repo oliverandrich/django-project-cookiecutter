@@ -1,11 +1,5 @@
 #!/bin/sh
 
-echo "\033[32m✓\033[0m Downloaded htmx 2.x.x."
-curl -s -L https://unpkg.com/htmx.org@2.x.x >assets/js/htmx.min.js
-
-echo "\033[32m✓\033[0m Downloaded alpinejs 3.x.x."
-curl -s -L https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js >assets/js/alpinejs.min.js
-
 echo "\033[32m✓\033[0m Created .env file."
 echo "# Activate debug mode for Django framework." >>.env
 echo "DEBUG=true" >>.env

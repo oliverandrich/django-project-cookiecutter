@@ -7,9 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %}Home{% endblock %}</title>
         {% tailwind_css %}
-        <script src="{% static 'js/htmx.min.js' %}" defer></script>
-        <script src="{% static 'js/alpinejs.min.js' %}" defer></script>
-        {% django_htmx_script %}
+        {% htmx_script %}
         {% django_browser_reload_script %}
         {% block extra_head %}{% endblock %}
     </head>

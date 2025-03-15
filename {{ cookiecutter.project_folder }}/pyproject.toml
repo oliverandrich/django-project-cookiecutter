@@ -4,7 +4,7 @@ version = "0.1.0"
 requires-python = ">=3.13,<4.0"
 dependencies = [
   "django-browser-reload>=1.17.0",
-  "django-htmx>=1.21.0",
+  "django-htmx>=1.23.0",
   "django-tailwind-cli[django-extensions]>=4.0.0",
   "django-typer[rich]>=2.4.0",
   "django-unique-user-email>=23.2",
@@ -29,6 +29,17 @@ dev = [
   "pytest-django>=4.9.0",
   "pytest-mock>=3.14.0",
 ]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+typeCheckingMode = "basic"
+
+[tool.mypy]
+plugins = ["mypy_django_plugin.main"]
+
+[tool.django-stubs]
+django_settings_module = "{{ cookiecutter.package_name }}.settings"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "{{ cookiecutter.package_name }}.settings"
