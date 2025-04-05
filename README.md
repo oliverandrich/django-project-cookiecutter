@@ -13,7 +13,7 @@ Out of the box SQLite is configured, but you can easily activate MySQL or Postgr
 ## Features
 
 - Python 3.13
-- Django 5.1.x
+- Django 5.2.x
 - django-htmx
 - django-tailwind-cli
 - django-typer
