@@ -16,7 +16,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-granian = ["granian[pname]>=1.6.4"]
+granian = ["granian[pname]>=2.0"]
 
 [dependency-groups]
 dev = [
