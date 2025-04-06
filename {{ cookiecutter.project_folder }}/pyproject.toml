@@ -5,7 +5,7 @@ requires-python = ">=3.13,<4.0"
 dependencies = [
   "django-browser-reload>=1.17.0",
   "django-htmx>=1.23.0",
-  "django-tailwind-cli[django-extensions]>=4.0.0",
+  "django-tailwind-cli[django-extensions]>=4.2.2",
   "django-typer[rich]>=2.4.0",
   "django-unique-user-email>=23.2",
   "django[argon2]>=5.2",
